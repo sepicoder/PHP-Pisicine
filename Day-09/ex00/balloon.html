@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Balloon</title>
+    <style>
+    #cir {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: 20%;
+    }
+    </style>
+</head>
+<body>
+<div id="cir"> </div>    
+<script>
+    var color = ["red", "green", "blue"];
+    var curColor = 0;
+    var balloon = document.getElementById('cir');
+        balloon.onclick = function () {
+            curColor++;
+            if (curColor === 3)
+                curColor = 0;
+            balloon.style.backgroundColor = color[curColor];
+            balloon.style.width = balloon.clientWidth + 10 + "px";
+            balloon.style.height = balloon.clientHeight + 10 + "px";
+            if(balloon.clientWidth > 420)
+            {
+                balloon.style.width = "200px";
+                balloon.style.height = "200px";
+            }
+        };
+
+        balloon.addEventListener("mouseout", function() {
+            if (balloon.clientWidth > 200) {
+                balloon.style.width = balloon.clientWidth - 5 + "px";
+                balloon.style.height = balloon.clientWidth - 5 + "px";
+                curColor--;
+                if (curColor === -1)
+                curColor = 2;
+                balloon.style.backgroundColor = color[curColor];
+            }
+        });
+
+        </script>   
+    </body>
+</html>

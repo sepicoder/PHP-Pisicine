@@ -1,0 +1,305 @@
+/*ft_minishop*/
+
+#main_menu {
+	width:100%;
+	position:relative;
+}
+
+#main_menu UL LI {
+	list-style-type:none;
+	padding-left:0px;
+	margin:0px;
+	/* display:inline; */
+	line-height:15px;
+	vertical-align:middle;
+	text-align:center;
+	float: left;
+	padding: 2em;
+}
+
+#logo {
+	width:20%;
+	margin:0;
+	opacity:0.5;
+	transition-duration:.7s;
+}
+
+#logo:hover {
+	opacity:1;
+	transition-duration:.7s;
+}
+
+/*login*/
+
+.title {
+	margin-top:0%;
+}
+
+.login {
+	/* align-content: center;
+	width:250px;
+	background-color:white;
+	border-radius:5px;
+	padding:50px 20px 5px 20px;
+	 */
+	 background-color: white;
+	 border-radius: 5px;
+	 padding: 50px 20px 5px 20px;
+	 position: relative;
+	 width: 300px;
+	 height: 250px;
+	 z-index: 15;
+	 top: 0%;
+	 left: 42%;
+}
+
+.id {
+	width:100%;
+	display:block;
+	font-family:Courier;
+	text-align:center;
+	color: black;
+}
+
+.passwd {
+	width:100%;
+	display:block;
+	font-family:Courier;
+	text-align:center;
+	margin-top:20%;
+	color: black;
+}
+.signup {
+font-size: 1em;
+display: block;
+color: white;
+text-align: center;
+font-family: Courier;
+margin-top: 3%;
+}
+
+H1 {
+	font-family:Courier;
+	text-align:center;
+	color:white;
+}
+
+
+.button {
+	margin-top:20%;
+	display:block;
+	width:50%;
+	font-family:Courier;
+	margin-left:25%;
+}
+
+/*shop*/
+
+#topmenu {
+	margin-top:-10%;
+	margin-right:0%;
+}
+
+#topmenu UL {
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+
+#topmenu UL LI {
+	color:white;
+	float: right;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+	font-size: 1.5em;                    
+	font-weight: bold;
+}
+
+.menuLink, .sub {
+	text-decoration:none;
+	opacity:0.5;
+	display: block;
+	width: 150px;                       
+	font-size: 1.5em;                    
+	font-weight: bold;
+	font-family:Courier;
+	transition-duration:.7s;
+}
+
+.menuLink {     
+	color: white;
+}
+
+.topmenuli:hover .menuLink {    
+	opacity:1;
+	transition-duration:.7s;
+	color: rgb(35, 206, 206);
+	font-size: 1.5em;                    
+	font-weight: bold;
+	padding: 2em;
+}
+
+.sub {          
+	color: white;             
+	margin-top: -1px;           
+}
+
+.submenu {             
+	position: absolute;     
+	height: 0px;            
+	overflow: hidden;       
+	transition: height .2s; 
+	-webkit-transition: height .2s; 
+	-moz-transition: height .2s; 
+	-o-transition: height .2s;
+	transition-duration:.7s;
+	color: rgb(35, 206, 206);
+}
+
+.topMenuLi:hover .submenu { 
+	height: 83px;
+	transition-duration:.7s;
+	opacity:1;
+}
+
+.sub:hover {        
+	color: black;                 
+	background-color: #dddddd;
+	transition-duration:.7s;
+	opacity:1;
+}
+
+/*shop_log*/
+.top {
+	margin-top:0%;;
+	color:white;
+	text-align:right;
+	float:right;
+	font-family:Courier;
+	opacity:.5;
+	font-size:2em;
+}
+
+.hi {
+	margin-left:10px;
+}
+.basket {
+	width:40px;
+	opacity:.6;
+	z-index:9
+}
+
+.logout {
+	width:35px;
+	opacity:.8;
+	z-index:8
+}
+
+.basket:hover {
+	transition-duration:.7s;
+	opacity:1;
+	background-color: rgb(35, 206, 206);
+}
+
+.logout:hover {
+	transition-duration:.7s;
+	opacity:1;
+	color: rgb(35, 206, 206);
+}
+
+/*signup_fail*/
+
+.fail {
+	color:red;
+	font-family:Courier;
+	text-align:center;
+}
+
+/*product*/
+.wrapper {
+    /* float: left; */
+    padding: 6em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5em;
+    grid-auto-rows: 500px;
+	text-align: center;
+  }
+
+  body{
+      background-color:black;
+      color:white;
+      text-align: center;
+      font-family: "Lucida Console", Monaco, monospace;
+      
+  }
+  h3{
+	color: rgb(35, 206, 206);
+    
+  }
+  p{
+      color:lightslategray;
+      color:white;
+      font-family: "Lucida Console", Monaco, monospace;
+  }
+  img{
+    border-radius: 20px;
+  }
+
+.button img{
+  border-radius: 0ch;
+  align-content: center;
+}
+
+.button {
+    background-color: rgb(52, 187, 211);
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: black; 
+    border: 2px solid white;
+	border-radius: 15px;
+	align-content: center;
+}
+.wrapper .button{
+	width: 110px;
+	height: 60px;
+	align-content: center;
+}
+.button:hover {
+    background-color: rgb(199, 46, 84);
+    color: white;
+}
+.rightnav {
+	position: absolute;
+	float:right;
+	top:1em;
+	right:1em;
+	font-size: 2.5em;
+}
+.rightnav img{
+	position: relative;
+	width: 60px;
+	height :50px;
+	color: rgb(35, 206, 206);
+}
+.shoptable{
+	font-family: arial, sans-serif;
+    padding-left: 550px;
+	width: 100%;
+	position: absolute;
+}
+/* .shoptable td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+} */
